@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ApartmentQuery">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="117.0" layoutY="120.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="textField" layoutX="14.0" layoutY="23.0" prefHeight="30.0" prefWidth="144.0" />
+                  <TableView fx:id="studentTable" layoutY="66.0" prefHeight="332.0" prefWidth="295.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="66.0">
+                    <columns>
+                      <TableColumn fx:id="student_id" prefWidth="145.0" text="学生id" />
+                      <TableColumn fx:id="student_name" minWidth="1.0" prefWidth="149.0" text="学生名" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="216.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleOkClicked" text="OK" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="apartmentStudentTable" layoutX="14.0" layoutY="52.0" prefHeight="398.0" prefWidth="295.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="apartment_name" prefWidth="147.0" text="公寓名" />
+                      <TableColumn fx:id="student_number" prefWidth="147.0" text="学生人数" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SCView">
+   <children>
+      <SplitPane dividerPositions="0.7023411371237458" layoutX="100.0" layoutY="103.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="SCTable" layoutX="22.0" layoutY="14.0" prefHeight="398.0" prefWidth="416.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="student_id" prefWidth="75.0" text="学生ID" />
+                      <TableColumn fx:id="student_name" prefWidth="75.0" text="学生名称" />
+                        <TableColumn fx:id="course_id" prefWidth="75.0" text="课程ID" />
+                        <TableColumn fx:id="course_name" prefWidth="100.0" text="课程名称" />
+                        <TableColumn fx:id="grade" prefWidth="90.0" text="成绩" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.7196969696969697" layoutX="7.0" layoutY="99.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="174.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Button layoutX="41.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleAddSC" prefHeight="47.0" prefWidth="88.0" text="Add" />
+                              <Button layoutX="41.0" layoutY="117.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="88.0" text="edit" />
+                              <Button layoutX="41.0" layoutY="200.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="88.0" text="Delete" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Button layoutX="42.0" layoutY="30.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="88.0" text="相关查询" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

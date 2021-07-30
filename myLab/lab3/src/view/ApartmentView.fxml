@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ApartmentView">
+   <children>
+      <SplitPane dividerPositions="0.7107023411371237" layoutX="114.0" layoutY="126.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tableView" layoutX="40.0" layoutY="32.0" prefHeight="398.0" prefWidth="421.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="apartment_id" prefWidth="212.0" text="公寓编号" />
+                      <TableColumn fx:id="apartment_name" minWidth="0.0" prefWidth="208.0" text="公寓名称" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.6792929292929293" layoutX="-7.0" layoutY="153.0" orientation="VERTICAL" prefHeight="670.0" prefWidth="169.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <VBox layoutX="33.0" layoutY="56.0" spacing="40.0">
+                                 <children>
+                                    <Button fx:id="add" layoutX="34.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleNewApartment" prefHeight="57.0" prefWidth="101.0" text="新增公寓" />
+                                    <Button fx:id="delete" layoutX="34.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleDeleteApartment" prefHeight="57.0" prefWidth="101.0" text="删除公寓" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Button layoutX="33.0" layoutY="33.0" mnemonicParsing="false" onAction="#someQuery" prefHeight="57.0" prefWidth="101.0" text="相关查询" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddSC">
+   <children>
+      <Button layoutX="122.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleOkClicked" prefHeight="44.0" prefWidth="91.0" text="OK" />
+      <Button layoutX="391.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleCancelClicked" prefHeight="44.0" prefWidth="91.0" text="cancel" />
+      <TextField fx:id="student_name" layoutX="257.0" layoutY="54.0" prefHeight="44.0" prefWidth="233.0" />
+      <Label layoutX="104.0" layoutY="54.0" prefHeight="44.0" prefWidth="85.0" text="学生姓名：" />
+      <Label layoutX="104.0" layoutY="134.0" prefHeight="44.0" prefWidth="85.0" text="课程名：" />
+      <TextField fx:id="course_name" layoutX="257.0" layoutY="134.0" prefHeight="44.0" prefWidth="233.0" />
+      <Label layoutX="104.0" layoutY="211.0" prefHeight="44.0" prefWidth="71.0" text="成绩：" />
+      <TextField fx:id="grade" layoutX="257.0" layoutY="211.0" prefHeight="44.0" prefWidth="233.0" />
+   </children>
+</AnchorPane>
